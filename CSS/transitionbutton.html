@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background: #282c34;
+        font-family: Arial, sans-serif;
+      }
+      button {
+        padding: 15px 30px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #61dafb;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out,
+          transform 0.5s ease-in-out;
+      }
+      button:hover {
+        background-color: #21a1f1;
+        transform: scale(1.1);
+        transform: rotate(360deg);
+      }
+
+      .animate {
+        font-size: 24px;
+        color: #61dafb;
+        animation: moveText 2s infinite alternate;
+      }
+
+      @keyframes moveText {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hovertext">
+      <button>Hover Me</button>
+    </div>
+    <div class="animate">
+      <p>Text is moving</p>
+    </div>
+  </body>
+</html>

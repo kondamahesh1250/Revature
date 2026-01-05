@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function firstFunction() {
+            console.log("Inside firstFunction");
+            secondFunction();
+            console.log("Exiting firstFunction");
+        }
+
+        function secondFunction() {
+            console.log("Inside secondFunction");
+            thirdFunction();
+            console.log("Exiting secondFunction");
+        }
+
+        function thirdFunction() {
+            console.log("Inside thirdFunction");
+            // Simulate some processing
+            for (let i = 0; i < 3; i++) {
+                console.log(`Processing ${i + 1}`);
+            }
+            console.log("Exiting thirdFunction");
+        }
+
+        // Start the call stack by invoking the first function
+        firstFunction();
+
+        
+    </script>
+</body>
+</html>

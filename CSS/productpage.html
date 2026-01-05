@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Page</title>
+ <style>
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: white;
+  padding: 15px;
+  z-index: 100;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.cart {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: orange;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #e0e0e0;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+ </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>MyStore</h2>
+  </nav>
+
+  <div class="cart">🛒</div>
+
+  <div class="page">
+    <aside class="sidebar">Categories</aside>
+
+    <main class="products">
+      <div class="card">
+        <h3>Product 1</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/feb5ff34-f129-40f9-819c-440dae63213c.png" alt="">
+        <p>Price: ₹5000</p>
+      </div>
+      <div class="card">
+        <h3>Product 2</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/b5a94e57-89b6-423c-b16b-7ecb8de8085c.png" alt="">
+        <p>Price: ₹100</p>
+      </div>
+      <div class="card">
+        <h3>Product 3</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/1564bbbb-4f5b-4ec8-bad6-eaba570e5466.png" alt="">
+        <p>Price: ₹900</p>
+      </div>
+      <div class="card">
+        <h3>Product 4</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/4d5af794-b84d-461b-b114-aca26c5829bc.png" alt="">
+        <p>Price: ₹1200</p>
+      </div>
+      <div class="card">
+        <h3>Product 5</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/890a538e-633a-44de-84e1-2d48717219eb.png" alt="">
+        <p>Price: ₹500</p>
+      </div>
+      <div class="card">
+        <h3>Product 6</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/fceab2dc8c9c4047be291d0632595236.png" alt="">
+        <p>Price: ₹300</p>
+      </div>
+      <div class="card">
+        <h3>Product 7</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/95b02faa-dae4-4587-a647-6527d16a9145.png" alt="">
+        <p>Price: ₹200</p>
+      </div>
+      <div class="card">
+        <h3>Product 8</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/a2754a09-999c-4228-9c1d-4f7dee06be02.png" alt="">
+        <p>Price: ₹300</p>
+      </div>
+      <div class="card">
+        <h3>Product 9</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/057590bf-43e7-4594-8f72-d3bc7a632af4.png" alt="">
+        <p>Price: ₹9000</p>
+      </div>
+      <div class="card">
+        <h3>Product 10</h3>
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/d5cd0c44-5635-4eb9-ada8-77da8a6675b3.png" alt="">
+        <p>Price: ₹150</p>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

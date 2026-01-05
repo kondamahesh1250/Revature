@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Demo</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <button id="btn">Hide Text</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("p").css("color", "red");
+          $("h2").hide();
+          $("h2").show();
+          $("p").animate({ fontSize: "30px", fontWeight:"bolder" }, 1000);
+        });
+      });
+    </script>
+    <p>Hello, this is jQuery!!</p>
+    <h2>this is h2 text</h2>
+  </body>
+</html>

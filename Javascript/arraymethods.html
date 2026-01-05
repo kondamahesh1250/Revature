@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Enter Numbers</label>
+        <input type="text" name="" id="userinput">
+        <br><br>
+        <button onclick="checkmap()">Map Function (Multiply)</button>
+        <button onclick="checkreduce()">Reduce Function (Sum)</button>
+        <button onclick="checkforeach()">ForEach Function (Display)</button>
+        <button onclick="checkmaxvalue()">Maximum & Minimum Value</button>
+        <p id="result"></p>
+
+        <script>
+            function checkmap() {
+                let resultText = '';
+                const numbers = document.getElementById('userinput').value.split(',').map(Number);
+                const mappedNumbers = numbers.map(num => num * num);
+                resultText = 'Mapped Numbers: ' + mappedNumbers.join(', ');
+
+                document.getElementById('result').innerText = resultText;
+            }
+
+            function checkreduce() {
+                let resultText = '';
+                const numbers = document.getElementById('userinput').value.split(',').map(Number);
+                const reducedValue = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                resultText = 'Reduced Value: ' + reducedValue;
+
+                document.getElementById('result').innerText = resultText;
+            }
+
+            function checkforeach() {
+                let resultText = 'Numbers: ';
+                const numbers = document.getElementById('userinput').value.split(',').map(Number);
+                numbers.forEach(num => {
+                    resultText += num + ' ';
+                });
+                document.getElementById('result').innerText = resultText;
+            }
+
+            function checkmaxvalue() {
+                let resultText = '';
+                const numbers = document.getElementById('userinput').value.split(',').map(Number);
+                const maxValue = Math.max(...numbers);
+                const minValue = Math.min(...numbers);
+                resultText = 'Maximum Value: ' + maxValue + ', Minimum Value: ' + minValue;
+
+                document.getElementById('result').innerText = resultText;
+            }
+        </script>
+    </div>
+</body>
+</html>

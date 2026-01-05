@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      .main {
+        text-align: center;
+        margin-top: 150px;
+      }
+      .badge {
+        position: relative;
+        display: inline-block;
+        border: 2px solid black;
+        background-color: rgb(246, 246, 246);
+        padding: 10px;
+        width: 200px;
+        border-radius: 10px;
+        margin: 20px;
+      }
+      .badge img {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+      }
+
+      .badge p {
+        text-align: left;
+        margin: 5px;
+        font-size: 18px;
+      }
+
+      .badge::after {
+        content: "Flat 20% Off";
+        position: absolute;
+        top: 0px;
+        left: 65px;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        border-bottom-style: dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Badge Component</h1>
+      <div class="badge">
+        <span
+          ><img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/19217ea1-db1d-48a3-bb0d-733615c083d2.png"
+            alt=""
+        /></span>
+        <p>Whole Farm Grocery</p>
+        <p><b>₹147.00</b></p>
+      </div>
+      <div class="badge">
+        <span
+          ><img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/809a3680-f58f-4f0c-a387-deb617b493cb.png"
+            alt=""
+        /></span>
+        <p>India Bhog Rice</p>
+        <p><b>₹160.00</b></p>
+      </div>
+      <div class="badge">
+        <span
+          ><img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/e17cbb6e-ea92-40fc-b830-f5c1b3e3ef38.png"
+            alt=""
+        /></span>
+        <p>Tata Sampann Organic</p>
+        <p><b>₹189.00</b></p>
+      </div>
+      <div class="badge">
+        <span
+          ><img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/533a90a9-5036-4fa6-8994-0ae88ab65f33.png"
+            alt=""
+        /></span>
+        <p>Whole Farm Premium</p>
+        <p><b>₹179.00</b></p>
+      </div>
+      <div class="badge">
+        <span
+          ><img
+            src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/372a643d-7084-4609-af94-cf4bc0ce4a05.png"
+            alt=""
+        /></span>
+        <p>Whole Farm Grocery</p>
+        <p><b>₹199.00</b></p>
+      </div>
+    </div>
+  </body>
+</html>

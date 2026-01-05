@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 200px 600px;
+        }
+        input {
+            margin: 5px 0;
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Register</h2>
+
+    <input type="text" id="fullname" placeholder="Full Name"><br><br>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <span><a href="./login.html">Login Here</a></span><br><br>
+
+    <button onclick="register()">Register</button>
+
+    <script>
+        function register() {
+            let fullname = document.getElementById("fullname").value;
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+            if(user === "" || pass === ""){
+                alert("All fields required");
+                return;
+            }
+
+            localStorage.setItem("username", user);
+            localStorage.setItem("fullname", fullname);
+            localStorage.setItem("password", pass);
+
+            alert("Registration successful");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

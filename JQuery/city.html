@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="city">Click</button>
+    <div id="result" style="display: none">
+      <ul>
+        <li>Hyderabad</li>
+        <li>Hyderabad</li>
+        <li>Hyderabad</li>
+      </ul>
+    </div>
+
+    <div>
+        <label for="name">Name:</label>
+      <input type="text" name="" id="name" />
+    </div>
+    <script>
+      // $(document).ready(function(){
+      //     $("#city").click(function(){
+      //         $.ajax({
+      //             url: "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY",
+      //             type: "GET",
+      //             success: function(data){
+      //                 $("#result").html("City: " + data.name + "<br>Temperature: " + data.main.temp + "K");
+      //             },
+      //             error: function(error){
+      //                 $("#result").html("Error fetching data");
+      //             }
+      //         });
+      //     });
+      // });
+      $(document).ready(function () {
+        $("#city").click(function () {
+          $("#result").toggle();
+          $("input[type='text']").val("Mahesh");
+        });
+      });
+
+      $(document).ready(function () {
+        // $("#name").keyup(function(){
+        //     let value = $(this).val();
+        //     console.log("Input value: " + value);
+        // });
+        // $("#name").on("input", function(){
+        //     let value = $(this).val();
+        //     console.log("Input value: " + value);
+        // });
+        // $("#name").on("change", function(){
+        //     let value = $(this).val();
+        //     console.log("Input value: " + value);
+        // });
+        // $("input[type='text']").val("Mahesh");
+      });
+    </script>
+  </body>
+</html>

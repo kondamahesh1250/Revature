@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Enter number 1</label>
+        <input type="number" name="" id="">
+        <br>
+        <label for="">Enter number 2</label>
+        <input type="number" name="" id="">
+        <br>
+        <br>
+        <button onclick="print('add')">+</button>
+        <button onclick="print('subtract')">-</button>
+        <button onclick="print('multiply')">*</button>
+        <button onclick="print('divide')">/</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function print(operation) {
+            var num1 = parseFloat(document.getElementsByTagName("input")[0].value);
+            var num2 = parseFloat(document.getElementsByTagName("input")[1].value);
+            var result;
+            switch (operation) {
+                case "add":
+                    result = num1 + num2;
+                    break;
+                case "subtract":
+                    result = num1 - num2;
+                    break;
+                case "multiply":
+                    result = num1 * num2;
+                    break;
+                case "divide":
+                    result = num1 / num2;
+                    break;
+                default:
+                    console.log("Invalid operation");
+            }
+            console.log("The result is: " + result);
+            // alert("The result is: " + result);
+            document.getElementById("result").innerText = "The result is: " + result;
+        }
+    </script>
+</body>
+</html>

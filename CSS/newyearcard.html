@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(155deg, #1e3c72, #4a70b2);
+      }
+      .card {
+        background: white;
+        max-width: 600px;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid #3bb1c9;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        animation: pop 1.2s ease-in-out;
+      }
+      @keyframes pop {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      h1 {
+        color: #2a5298;
+        margin-bottom: 10px;
+        font-size: 28px;
+      }
+      h2 {
+        color: #ff9800;
+        font-size: 36px;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+        margin-top: 15px;
+      }
+
+      @media (max-width: 576px) {
+        .card {
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        .card {
+          max-width: 48%;
+        }
+      }
+      @media (max-width: 1024px) {
+        .card {
+          max-width: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>🎉Happy New Year!🎉</h1>
+      <h2>2026</h2>
+      <p>Wishing you a year filled with new hopes, joys, and beginnings.</p>
+
+      <p>May this year bring you success, happiness, and prosperity.</p>
+      <p>Cheers to a wonderful year ahead!</p>
+      <br />
+      <p> - Best Wishes, 🥳</p>
+      <p>K MAHESH</p>
+    </div>
+  </body>
+</html>

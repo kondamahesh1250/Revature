@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // closure
+        function outerFunction(outerVariable) {
+            return function innerFunction(innerVariable) {
+                console.log('Outer Variable: ' + outerVariable);
+                console.log('Inner Variable: ' + innerVariable);
+            }
+        }
+
+        const newFunction = outerFunction('outside');
+        newFunction('inside');
+
+        // closure with setTimeout
+        for (let i = 1; i <= 3; i++) {
+            setTimeout(function() {
+                console.log('Value of i: ' + i);
+            }, i * 1000);
+        }
+
+        // Using IIFE
+        for (var j = 1; j <= 3; j++) {
+            (function(j) {
+                setTimeout(function() {
+                    console.log('Value of j: ' + j);
+                }, j * 1000);
+            })(j);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR1 Page</title>
+  </head>
+  <body>
+    <h1>Welcome to the AR1 Page</h1>
+    <p>This is a sample HTML page named ar1.html.</p>
+    <script>
+      let names = [
+        "Mittal",
+        "Jahanvi",
+        "Nidhi",
+        "Ankit",
+        3.4,
+        true,
+        1999,
+        null,
+      ];
+
+      for (let i = 0; i < names.length; i++) {
+        console.log(names[i]);
+      }
+      let fname = names[0];
+      console.log("First Name is: " + fname);
+      let lastelement = names[names.length - 1];
+      console.log("Last Element is: " + lastelement);
+      names.push("New Name");
+      console.log(names);
+      names.pop();
+      console.log(names);
+      names.shift();
+      console.log(names);
+      names.unshift("First Name");
+      console.log(names);
+      let part = names.slice(2, 5);
+      console.log("Sliced part is: " + part);
+
+      console.log(names.splice(2,5,"Added Name1","Added Name2","Added Name3"));
+      console.log("After Splice: " + names);
+
+      const num = [1, 2, 3, 4, 5];
+      const result = num.filter((number) => number % 2 ===0);
+      console.log("Filtered Numbers: " + result);
+
+        const squared = result.map((number) => number * number);
+        console.log("Squared Numbers: " + squared);
+
+        const sum = squared.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log("Sum of Squared Numbers: " + sum);
+    </script>
+  </body>
+</html>

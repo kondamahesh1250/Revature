@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 200px 600px;
+        }
+        button {
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dashboard</h2>
+    <p id="welcome"></p>
+
+    <button onclick="logout()">Logout</button>
+
+    <script>
+        if(localStorage.getItem("loggedIn") !== "true"){
+            window.location.href = "login.html";
+        }
+
+        document.getElementById("welcome").innerText =
+            "Welcome " + localStorage.getItem("username");
+
+        function logout(){
+            localStorage.removeItem("loggedIn");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
